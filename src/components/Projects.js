@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import navIcon2 from '../assets/img/nav-icon2.svg';
+import navIcon2 from '../assets/img/gitlab-icon.svg';
 
 
 export const Projects = () => {
