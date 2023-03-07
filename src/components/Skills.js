@@ -1,11 +1,15 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import docker from "../assets/img/docker.svg"
+import django from "../assets/img/django.png"
+import html from "../assets/img/html-5.svg"
+import javascript from "../assets/img/javascript.svg"
+import python from "../assets/img/python.svg"
+import react from "../assets/img/react-native.svg"
+import git from "../assets/img/git.svg"
+import postgresql from "../assets/img/postgresql.svg"
+import mongodb from "../assets/img/mongodb.svg"
 
 export const Skills = () => {
   const responsive = {
@@ -38,20 +42,40 @@ export const Skills = () => {
                         <p>Javascript ES6+, Python 3, SQL, HTML5, CSS, JSON, React, DOM manipulation, Websockets, Django 4, NodeJS, PostgreSQL, MongoDB, Apache Kafka, RabbitMQ, Domain-Driven Design, RESTful API, Monoliths, Microservices, Git, Docker<br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Javascript</h5>
+                                <img src={docker} alt="Image" />
+                                <h5>Docker</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>React</h5>
+                                <img src={html} alt="Image" />
+                                <h5>HTML</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={django} alt="Image" />
+                                <h5>Django</h5>
+                            </div>
+                            <div className="item">
+                                <img src={javascript} alt="Image" />
+                                <h5>JavaScript</h5>
+                            </div>
+                            <div className="item">
+                                <img src={python} alt="Image" />
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Django</h5>
+                                <img src={git} alt="Image" />
+                                <h5>Git</h5>
+                            </div>
+                            <div className="item">
+                                <img src={react} alt="Image" />
+                                <h5>React</h5>
+                            </div>
+                            <div className="item">
+                                <img src={postgresql} alt="Image" />
+                                <h5>PostgreSQL</h5>
+                            </div>
+                            <div className="item">
+                                <img src={mongodb} alt="Image" />
+                                <h5>MongoDB</h5>
                             </div>
                         </Carousel>
                     </div>
