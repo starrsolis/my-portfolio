@@ -7,6 +7,8 @@ import linkedin from '../assets/img/linkedin-icon.svg';
 import gitlab from '../assets/img/gitlab-icon.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
+
+
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
@@ -30,6 +32,10 @@ export const NavBar = () => {
     setActiveLink(value)
   }
 
+  const changeScroll = (position) => {
+      window.scrollTo(0, position);
+    };
+
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
@@ -41,9 +47,9 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home') }>Home</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => changeScroll(1250)}>Projects</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
@@ -51,7 +57,7 @@ export const NavBar = () => {
                 <a href="https://gitlab.com/starrsolis"><img src={gitlab} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
             </div>
-            <button className="vvd" onClick={ () => console.log('connect')}><span>Let's Connect</span></button>
+                <button className="vvd" onClick={() => changeScroll(3418)}><span>Let’s Connect</span></button>
           </span>
         </Navbar.Collapse>
       </Container>

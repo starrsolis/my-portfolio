@@ -51,7 +51,7 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                    <span className="tageline">Welcome to my Portfolio</span>
+                    <span className="tageline">Welcome to My Portfolio</span>
                     <h1>{"Hi, I'm Starr Solis "}<span className="wrap">{text}</span></h1>
                     <p>I am a chronically curious Software Engineer, who is results-driven and people focused. I love to explore innovative solutions and work alongside a team. I am inspired by the ever-changing programming landscape and learning new tools, programming languages, and frameworks to create useful software. As someone who has worn many hats over the years, I look forward to bringing my excitement, optimism and keen problem-solving skills to the tech industry.</p>
                     <button onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size={25} /></button>
