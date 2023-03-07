@@ -547,12 +547,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 1;
   position: relative;
 }
+/***
 .contact button:hover {
-  color: #fff;
+  color:white;
 }
+**/
 .contact button::before {
   content: "";
-  background: lightblue;
+  background: #6495ED;
   width: 0;
   height: 100%;
   position: absolute;
@@ -562,13 +564,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
+
 .contact button:hover::before {
   width: 100%;
+  opacity: 0.5;
+  
 }
 .contact button:hover::after {
   width: 100%;
-  color:white
+  opacity: 1
 }
+
 
 /************ Footer Css ************/
 .footer {
