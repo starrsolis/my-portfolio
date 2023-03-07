@@ -5,7 +5,7 @@ import logo from '../assets/img/logo-s.png';
 import {useEffect, useState} from "react"
 import linkedin from '../assets/img/linkedin-icon.svg';
 import gitlab from '../assets/img/gitlab-icon.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon3 from '../assets/img/resume-icon.png';
 
 
 
