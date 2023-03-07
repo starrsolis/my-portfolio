@@ -53,8 +53,8 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                <a href="https://www.linkedin.com/in/starr-solis/"><img src={linkedin} alt="" /></a>
-                <a href="https://gitlab.com/starrsolis"><img src={gitlab} alt="" /></a>
+                <a href="https://www.linkedin.com/in/starr-solis/" target="_blank"><img src={linkedin} alt="" /></a>
+                <a href="https://gitlab.com/starrsolis" target="_blank"><img src={gitlab} alt="" /></a>
                 <a href="https://docs.google.com/document/d/1Zq4msVTXf3xrjVrxzG-bh-oEs6Yj-j1Kb4hXnyyx0TA/edit?usp=sharing" target="_blank"><img src={navIcon3} alt="" /></a>
             </div>
                 <button className="vvd" onClick={() => changeScroll(3200)}><span>Let’s Connect</span></button>
