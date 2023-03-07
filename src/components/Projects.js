@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+import projImg1 from "../assets/img/artGallery.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import navIcon2 from '../assets/img/gitlab-icon.svg';
 
@@ -9,22 +9,22 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Travel Agency",
-      description: "React, Javascript ",
-      gitUrl: navIcon2 , 
-      imgUrl: projImg1, alt: "project"
+      title: "Project",
+      description: "React, Javascript",
+      gitUrl:"https://gitlab.com/starrsolis",
+      imgUrl: {},alt: "project"
     },
     {
-        title: "Travel Agency",
-        description: "React, Javascript ",
+        title: "Art Gallery",
+        description: "React, Javascript",
         gitUrl:"https://gitlab.com/starrsolis",
         imgUrl: projImg1, alt: "project"
       },
       {
-        title: "Travel Agency",
+        title: "Project",
         description: "React, Javascript ",
         gitUrl:"https://gitlab.com/starrsolis",
-        imgUrl: projImg1, alt: "project"
+        imgUrl: {}, alt: "project"
       },
   ];
 
@@ -33,8 +33,6 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            
-
                 <h2>Projects</h2>
                 <p></p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
