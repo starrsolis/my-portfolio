@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import resumeImg from "../assets/img/RESUME.png";
+
+
 
 
 export const Contact = () => {
@@ -41,12 +44,17 @@ export const Contact = () => {
     }
   };
 
+ 
+
   return (
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-                <img  alt="Contact"/>
+          <img src={resumeImg} alt="Resume Img" className='resume'/>
+          <a href="https://docs.google.com/document/d/1Zq4msVTXf3xrjVrxzG-bh-oEs6Yj-j1Kb4hXnyyx0TA/edit?usp=sharing" target="_blank">
+          <button>Download Resume</button>
+          </a>
           </Col>
           <Col size={12} md={6}>
                 <h2>Get In Touch</h2>

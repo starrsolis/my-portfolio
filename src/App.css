@@ -275,26 +275,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
-  color: darkblue;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
-  display: center;
-  align-items: center;
-  border-radius: 30px;
-  background-color: lightblue;
-}
-.banner button svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-.banner button:hover svg {
-  margin-left: 25px;
-}
 .banner img {
   animation: updown 3s linear infinite;
 }
@@ -550,6 +530,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
+
+/*****/
+.contact button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 30px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.contact button span {
+  z-index: 1;
+  position: relative;
+}
+.contact button:hover {
+  color: #fff;
+}
+.contact button::before {
+  content: "";
+  background: lightblue;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact button:hover::before {
+  width: 100%;
+}
+.contact button:hover::after {
+  width: 100%;
+  color:white
+}
+
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
