@@ -55,9 +55,9 @@ export const NavBar = () => {
             <div className="social-icon">
                 <a href="https://www.linkedin.com/in/starr-solis/"><img src={linkedin} alt="" /></a>
                 <a href="https://gitlab.com/starrsolis"><img src={gitlab} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://docs.google.com/document/d/1Zq4msVTXf3xrjVrxzG-bh-oEs6Yj-j1Kb4hXnyyx0TA/edit?usp=sharing"><img src={navIcon3} alt="" /></a>
             </div>
-                <button className="vvd" onClick={() => changeScroll(3418)}><span>Let’s Connect</span></button>
+                <button className="vvd" onClick={() => changeScroll(3200)}><span>Let’s Connect</span></button>
           </span>
         </Navbar.Collapse>
       </Container>
