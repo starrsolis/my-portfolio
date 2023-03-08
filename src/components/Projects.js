@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/artGallery.png";
+import artGallery from "../assets/img/artGallery.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import navIcon2 from '../assets/img/gitlab-icon.svg';
 
@@ -17,8 +17,9 @@ export const Projects = () => {
     {
         title: "Art Gallery",
         description: "React, Javascript",
-        gitUrl:"https://gitlab.com/starrsolis",
-        imgUrl: projImg1, alt: "project"
+        gitUrl: "https://github.com/starrsolis/art-gallery",
+        imgUrl: artGallery, alt: "project",
+        deployUrl: "https://artgallery-react.netlify.app"
       },
       {
         title: "Project",
