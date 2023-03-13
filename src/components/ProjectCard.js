@@ -5,7 +5,7 @@ import deploy from '../assets/img/deployment.png';
 
 export const ProjectCard = ({ title, description, gitUrl, imgUrl, deployUrl }) => {
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col>
       <div className="proj-imgbx">
         <img src={imgUrl} alt = "project" className= "proj-img" />
         <div className="proj-txtx">
@@ -13,9 +13,10 @@ export const ProjectCard = ({ title, description, gitUrl, imgUrl, deployUrl }) =
           <span>{description}</span>
           <p></p>
           <a href={gitUrl} target="_blank"><img src={github} alt="" className="proj-git-img"/></a>
-          <a href={deployUrl} target="_blank"><img src={deploy} alt="" className="proj-git-img"/></a>
      </div>
       </div>
     </Col>
   )
 }
+
+/// Col>size={12} sm={6} md={4} ---- When you want to change it back to three projects per tab
